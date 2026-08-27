@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="CyberLab — interactive cybersecurity labs, challenges, games and security tools."
+    >
+
+    <meta
+        name="theme-color"
+        content="#050505"
+    >
+
+    <title>CyberLab — Learn Cybersecurity</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
+
+<div class="site-background" aria-hidden="true">
+
+    <div class="background-grid"></div>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+</div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <!-- LOGO -->
+
+        <a href="#home" class="logo">
+
+            <span class="logo-mark">
+                C
+            </span>
+
+            <span class="logo-text">
+                CYBER<span>LAB</span>
+            </span>
+
+        </a>
+
+
+        <!-- DESKTOP NAV -->
+
+        <nav
+            class="desktop-nav"
+            aria-label="Main navigation"
+        >
+
+            <a href="#home" class="nav-link active">
+                Home
+            </a>
+
+            <a href="#labs" class="nav-link">
+                Labs
+            </a>
+
+            <a href="#challenges" class="nav-link">
+                Challenges
+            </a>
+
+            <a href="#games" class="nav-link">
+                Games
+            </a>
+
+            <a href="#resources" class="nav-link">
+                Toolkit
+            </a>
+
+            <a href="#about" class="nav-link">
+                About
+            </a>
+
+        </nav>
+
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="header-actions">
+
+            <button
+                class="header-user"
+                auth-profile
+                data-auth-profile
+                hidden
+            >
+
+                <span class="user-avatar">
+                    ?
+                </span>
+
+                <span data-auth-user>
+                    Guest
+                </span>
+
+            </button>
+
+
+            <button
+    type="button"
+    class="btn btn-small btn-outline"
+    data-auth-login
+    onclick="CyberLabAuth.open('login')"
+>
+    Sign in
+</button>
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                class="mobile-menu-button"
+                id="mobileMenuButton"
+                aria-label="Open menu"
+                aria-expanded="false"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- MOBILE NAV -->
+
+    <nav
+        class="mobile-nav"
+        id="mobileNav"
+        aria-label="Mobile navigation"
+    >
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#labs">
+            Labs
+        </a>
+
+        <a href="#challenges">
+            Challenges
+        </a>
+
+        <a href="#games">
+            Games
+        </a>
+
+        <a href="#resources">
+            Toolkit
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
+        <button
+            class="mobile-login"
+            data-auth-login
+        >
+            Sign in
+        </button>
+
+    </nav>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+    id="home"
+    class="hero section"
+>
+
+    <div class="hero-content">
+
+        <div class="hero-eyebrow">
+
+            <span class="status-dot"></span>
+
+            CYBERSECURITY EDUCATION
+
+        </div>
+
+
+        <h1 class="hero-title">
+
+            Learn.
+
+            <br>
+
+            Hack.
+
+            <br>
+
+            <em>Defend.</em>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            Master cybersecurity through interactive labs,
+            realistic challenges, games and hands-on tools.
+
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a
+                href="#labs"
+                class="btn btn-primary"
+            >
+
+                Explore Labs
+
+                <span>↗</span>
+
+            </a>
+
+
+            <a
+                href="#challenges"
+                class="btn btn-secondary"
+            >
+
+                Start Challenge
+
+                <span>→</span>
+
+            </a>
+
+        </div>
+
+
+        <!-- STATS -->
+
+        <div class="hero-stats">
+
+            <div class="hero-stat">
+
+                <strong data-stat-labs>
+                    30+
+                </strong>
+
+                <span>
+                    Labs
+                </span>
+
+            </div>
+
+
+            <div class="hero-stat">
+
+                <strong data-stat-challenges>
+                    20+
+                </strong>
+
+                <span>
+                    Challenges
+                </span>
+
+            </div>
+
+
+            <div class="hero-stat">
+
+                <strong data-stat-games>
+                    10+
+                </strong>
+
+                <span>
+                    Games
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <a
+        href="#labs"
+        class="hero-scroll"
+        aria-label="Scroll to labs"
+    >
+
+        <span>↓</span>
+
+    </a>
+
+</section>
+
+
+<!-- =====================================================
+     LABS
+===================================================== -->
+
+<section
+    id="labs"
+    class="section content-section"
+>
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-eyebrow">
+                01 / PRACTICE
+            </span>
+
+            <h2>
+                Cyber Labs
+            </h2>
+
+        </div>
+
+        <p>
+            Learn cybersecurity by actually doing it.
+            Pick a lab and start building practical skills.
+        </p>
+
+    </div>
+
+
+    <!-- LAB FILTERS -->
+
+    <div class="section-controls">
+
+        <div class="filter-bar">
+
+            <button
+                class="filter-button active"
+                data-lab-filter="all"
+            >
+                All
+            </button>
+
+            <button
+                class="filter-button"
+                data-lab-filter="network"
+            >
+                Network
+            </button>
+
+            <button
+                class="filter-button"
+                data-lab-filter="web"
+            >
+                Web
+            </button>
+
+            <button
+                class="filter-button"
+                data-lab-filter="linux"
+            >
+                Linux
+            </button>
+
+            <button
+                class="filter-button"
+                data-lab-filter="crypto"
+            >
+                Crypto
+            </button>
+
+            <button
+                class="filter-button"
+                data-lab-filter="forensics"
+            >
+                Forensics
+            </button>
+
+            <button
+                class="filter-button"
+                data-lab-filter="osint"
+            >
+                OSINT
+            </button>
+
+        </div>
+
+
+        <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+                type="search"
+                data-lab-search
+                placeholder="Search labs..."
+                autocomplete="off"
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- LABS -->
+
+    <div
+        class="labs-grid"
+        data-labs-container
+    ></div>
+
+</section>
+
+
+<!-- =====================================================
+     CHALLENGES
+===================================================== -->
+
+<section
+    id="challenges"
+    class="section content-section dark-section"
+>
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-eyebrow">
+                02 / TEST YOURSELF
+            </span>
+
+            <h2>
+                Challenges
+            </h2>
+
+        </div>
+
+        <p>
+            Short cybersecurity problems designed
+            to test your knowledge and earn XP.
+        </p>
+
+    </div>
+
+
+    <div class="section-controls">
+
+        <div class="filter-bar">
+
+            <button
+                class="filter-button active"
+                data-challenge-filter="all"
+            >
+                All
+            </button>
+
+            <button
+                class="filter-button"
+                data-challenge-filter="network"
+            >
+                Network
+            </button>
+
+            <button
+                class="filter-button"
+                data-challenge-filter="web"
+            >
+                Web
+            </button>
+
+            <button
+                class="filter-button"
+                data-challenge-filter="linux"
+            >
+                Linux
+            </button>
+
+            <button
+                class="filter-button"
+                data-challenge-filter="crypto"
+            >
+                Crypto
+            </button>
+
+        </div>
+
+
+        <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+                type="search"
+                data-challenge-search
+                placeholder="Search challenges..."
+                autocomplete="off"
+            >
+
+        </div>
+
+    </div>
+
+
+    <div
+        class="challenges-grid"
+        data-challenges-container
+    ></div>
+
+</section>
+
+
+<!-- =====================================================
+     GAMES
+===================================================== -->
+
+<section
+    id="games"
+    class="section content-section"
+>
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-eyebrow">
+                03 / PLAY
+            </span>
+
+            <h2>
+                Cyber Games
+            </h2>
+
+        </div>
+
+        <p>
+            Learn security concepts through
+            fast and interactive mini-games.
+        </p>
+
+    </div>
+
+
+    <div
+        class="games-grid"
+        data-games-container
+    ></div>
+
+</section>
+
+
+<!-- =====================================================
+     SECURITY TOOLKIT
+===================================================== -->
+
+<section
+    id="resources"
+    class="section content-section dark-section"
+>
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-eyebrow">
+                04 / TOOLKIT
+            </span>
+
+            <h2>
+                Security Toolkit
+            </h2>
+
+        </div>
+
+        <p>
+            Useful browser-based tools for
+            cybersecurity learning.
+        </p>
+
+    </div>
+
+
+    <div class="tools-grid">
+
+
+        <!-- PASSWORD -->
+
+        <article class="tool-card">
+
+            <div class="tool-icon">
+                🔐
+            </div>
+
+            <span class="tool-label">
+                PASSWORD
+            </span>
+
+            <h3>
+                Password Strength
+            </h3>
+
+            <p>
+                Check password strength directly
+                in your browser.
+            </p>
+
+            <input
+                type="password"
+                data-password-input
+                placeholder="Enter password..."
+                autocomplete="off"
+            >
+
+            <div class="password-strength">
+
+                <div class="strength-header">
+
+                    <span data-password-strength>
+                        Enter a password
+                    </span>
+
+                    <span data-password-percent>
+                        0%
+                    </span>
+
+                </div>
+
+                <div class="password-bar">
+
+                    <div data-password-bar></div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- BASE64 -->
+
+        <article class="tool-card">
+
+            <div class="tool-icon">
+                64
+            </div>
+
+            <span class="tool-label">
+                ENCODING
+            </span>
+
+            <h3>
+                Base64
+            </h3>
+
+            <p>
+                Encode or decode Base64 strings.
+            </p>
+
+            <textarea
+                data-base64-input
+                placeholder="Enter text..."
+                rows="4"
+            ></textarea>
+
+
+            <div class="tool-actions">
+
+                <button
+                    class="btn btn-small"
+                    data-base64-encode
+                >
+                    Encode
+                </button>
+
+                <button
+                    class="btn btn-small"
+                    data-base64-decode
+                >
+                    Decode
+                </button>
+
+            </div>
+
+
+            <textarea
+                data-base64-output
+                placeholder="Result..."
+                rows="4"
+                readonly
+            ></textarea>
+
+        </article>
+
+
+        <!-- HASH -->
+
+        <article class="tool-card">
+
+            <div class="tool-icon">
+                #
+            </div>
+
+            <span class="tool-label">
+                CRYPTOGRAPHY
+            </span>
+
+            <h3>
+                Hash Generator
+            </h3>
+
+            <p>
+                Generate SHA hashes locally.
+            </p>
+
+            <input
+                type="text"
+                data-hash-input
+                placeholder="Text to hash..."
+            >
+
+            <select data-hash-algorithm>
+
+                <option value="SHA-256">
+                    SHA-256
+                </option>
+
+                <option value="SHA-384">
+                    SHA-384
+                </option>
+
+                <option value="SHA-512">
+                    SHA-512
+                </option>
+
+            </select>
+
+
+            <button
+                class="btn"
+                data-hash-generate
+            >
+                Generate Hash
+            </button>
+
+
+            <textarea
+                data-hash-output
+                placeholder="Hash..."
+                rows="4"
+                readonly
+            ></textarea>
+
+        </article>
+
+
+        <!-- REGEX -->
+
+        <article class="tool-card">
+
+            <div class="tool-icon">
+                .*
+            </div>
+
+            <span class="tool-label">
+                REGEX
+            </span>
+
+            <h3>
+                Regex Tester
+            </h3>
+
+            <p>
+                Test regular expressions against text.
+            </p>
+
+            <input
+                type="text"
+                data-regex-pattern
+                placeholder="Pattern..."
+            >
+
+            <input
+                type="text"
+                data-regex-flags
+                placeholder="Flags: gi"
+            >
+
+            <textarea
+                data-regex-input
+                placeholder="Text to test..."
+                rows="4"
+            ></textarea>
+
+            <button
+                class="btn"
+                data-regex-test
+            >
+                Test Regex
+            </button>
+
+            <div
+                class="tool-output"
+                data-regex-output
+            ></div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    id="about"
+    class="section about-section"
+>
+
+    <div class="about-content">
+
+        <span class="section-eyebrow">
+            05 / ABOUT CYBERLAB
+        </span>
+
+
+        <h2>
+            Security should be
+            <em>hands-on.</em>
+        </h2>
+
+
+        <p>
+            CyberLab is an interactive cybersecurity
+            learning platform focused on practical skills.
+        </p>
+
+
+        <p>
+            Learn concepts, solve problems, experiment
+            with tools and build your security knowledge
+            step by step.
+        </p>
+
+
+        <div class="about-features">
+
+            <div>
+
+                <strong>01</strong>
+
+                <span>
+                    Learn
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>02</strong>
+
+                <span>
+                    Practice
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>03</strong>
+
+                <span>
+                    Compete
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo">
+
+                <span class="logo-mark">
+                    C
+                </span>
+
+                <span class="logo-text">
+                    CYBER<span>LAB</span>
+                </span>
+
+            </a>
+
+            <p>
+                Learn. Practice. Secure.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#labs">
+                Labs
+            </a>
+
+            <a href="#challenges">
+                Challenges
+            </a>
+
+            <a href="#games">
+                Games
+            </a>
+
+            <a href="#resources">
+                Toolkit
+            </a>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            © 2026 CyberLab
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     AUTH MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="authModal"
+    data-modal="auth"
+    aria-hidden="true"
+>
+
+    <div
+        class="modal-overlay"
+        data-auth-action="close"
+    ></div>
+
+
+    <div class="modal-box">
+
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     PROFILE MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="profileModal"
+    data-modal="profile"
+    aria-hidden="true"
+>
+
+    <div
+        class="modal-overlay"
+        data-auth-close
+    ></div>
+
+
+    <div class="modal-box">
+
+        <button
+            class="modal-close"
+            data-auth-close
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+
+        <div class="profile-header">
+
+            <div class="profile-avatar">
+                ?
+            </div>
+
+            <div>
+
+                <span class="section-eyebrow">
+                    CYBERLAB USER
+                </span>
+
+                <h2 data-profile-name>
+                    Guest
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-stats">
+
+            <div>
+
+                <strong data-profile-xp>
+                    0
+                </strong>
+
+                <span>
+                    XP
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong data-profile-level>
+                    1
+                </strong>
+
+                <span>
+                    Level
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong data-profile-completed>
+                    0
+                </strong>
+
+                <span>
+                    Completed
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="btn btn-outline"
+            data-auth-logout
+        >
+            Sign out
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     CHALLENGE MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="challengeModal"
+    data-modal="challenge"
+    aria-hidden="true"
+>
+
+    <div
+        class="modal-overlay"
+        data-action="close-modal"
+    ></div>
+
+
+    <div class="modal-box">
+
+        <button
+            class="modal-close"
+            data-action="close-modal"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+
+        <div data-challenge-content>
+            <!-- Challenge generated by JS -->
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     GAME MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="gameModal"
+    data-modal="game"
+    aria-hidden="true"
+>
+
+    <div
+        class="modal-overlay"
+        data-game-close
+    ></div>
+
+
+    <div class="modal-box game-modal-box">
+
+        <button
+            class="modal-close"
+            data-game-close
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+
+        <div data-game-content>
+            <!-- Game generated by JS -->
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     TOASTS
+===================================================== -->
+
+<div
+    class="toast-container"
+    id="toastContainer"
+    aria-live="polite"
+></div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/app.js"></script>
+<script src="js/labs.js"></script>
+<script src="js/challenges.js"></script>
+<script src="js/games.js"></script>
+<script src="js/tools.js"></script>
+
+<!-- Supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- Authentication -->
+<script src="js/auth.js"></script>
+
+
+<!-- =====================================================
+     MOBILE MENU
+===================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const button =
+        document.getElementById(
+            "mobileMenuButton"
+        );
+
+    const menu =
+        document.getElementById(
+            "mobileNav"
+        );
+
+
+    if (!button || !menu) {
+        return;
+    }
+
+
+    button.addEventListener("click", () => {
+
+        const isOpen =
+            menu.classList.toggle(
+                "active"
+            );
+
+
+        button.setAttribute(
+            "aria-expanded",
+            String(isOpen)
+        );
+
+
+        button.classList.toggle(
+            "active",
+            isOpen
+        );
+
+    });
+
+
+    menu.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            menu.classList.remove(
+                "active"
+            );
+
+            button.classList.remove(
+                "active"
+            );
+
+            button.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        });
+
+    });
+
+});
+
+</script>
+
+
+</body>
+</html>

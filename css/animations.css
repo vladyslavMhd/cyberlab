@@ -1,0 +1,792 @@
+/* =========================================================
+   CYBERLAB — ANIMATIONS
+   css/animations.css
+========================================================= */
+
+
+/* =========================================================
+   KEYFRAMES
+========================================================= */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.94);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.04);
+    }
+}
+
+
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+}
+
+
+@keyframes pulseGlow {
+    0% {
+        opacity: 0.35;
+    }
+
+    50% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 0.35;
+    }
+}
+
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes floatSlow {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(0, -18px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+@keyframes modalOut {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(20px) scale(0.96);
+    }
+}
+
+
+@keyframes toastIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+@keyframes toastOut {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(10px) scale(0.96);
+    }
+}
+
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+@keyframes blink {
+    0%,
+    45% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes scanline {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+
+/* =========================================================
+   PAGE LOAD
+========================================================= */
+
+body {
+    animation: fadeIn 0.6s ease both;
+}
+
+
+.site-header {
+    animation: fadeDown 0.7s ease both;
+}
+
+
+.hero-content {
+    animation: fadeUp 0.9s ease 0.1s both;
+}
+
+
+.hero-eyebrow {
+    animation: fadeUp 0.7s ease 0.2s both;
+}
+
+
+.hero-title {
+    animation: fadeUp 0.8s ease 0.3s both;
+}
+
+
+.hero-description {
+    animation: fadeUp 0.8s ease 0.4s both;
+}
+
+
+.hero-actions {
+    animation: fadeUp 0.8s ease 0.5s both;
+}
+
+
+.hero-stats {
+    animation: fadeUp 0.8s ease 0.6s both;
+}
+
+
+/* =========================================================
+   BACKGROUND
+========================================================= */
+
+.background-glow {
+    animation: floatSlow 8s ease-in-out infinite;
+}
+
+
+.glow-two {
+    animation-delay: -4s;
+}
+
+
+.status-dot {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+
+.background-grid {
+    animation: pulseGlow 5s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn {
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+
+.btn:active {
+    transform: translateY(-1px) scale(0.98);
+}
+
+
+.btn-primary:hover {
+    box-shadow: 0 12px 35px rgba(255, 255, 255, 0.12);
+}
+
+
+.btn span {
+    transition:
+        transform 0.3s ease;
+}
+
+
+.btn:hover span {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.nav-link {
+    position: relative;
+    transition:
+        color 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -8px;
+
+    width: 0;
+    height: 1px;
+
+    transform: translateX(-50%);
+
+    transition:
+        width 0.3s ease;
+}
+
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo-mark {
+    transition:
+        transform 0.4s ease,
+        border-radius 0.4s ease;
+}
+
+
+.logo:hover .logo-mark {
+    transform: rotate(-8deg) scale(1.05);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero-title em {
+    transition:
+        opacity 0.3s ease;
+}
+
+
+.hero-title:hover em {
+    opacity: 0.8;
+}
+
+
+.hero-scroll {
+    animation: float 2.5s ease-in-out infinite;
+}
+
+
+.hero-scroll span {
+    transition:
+        transform 0.3s ease;
+}
+
+
+.hero-scroll:hover span {
+    transform: translateY(5px);
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.section-heading {
+    animation: fadeUp 0.8s ease both;
+}
+
+
+.section-eyebrow {
+    transition:
+        opacity 0.3s ease;
+}
+
+
+.section-eyebrow:hover {
+    opacity: 0.65;
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.filter-button {
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.filter-button:hover {
+    transform: translateY(-2px);
+}
+
+
+.filter-button:active {
+    transform: scale(0.96);
+}
+
+
+/* =========================================================
+   SEARCH
+========================================================= */
+
+.search-box {
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.search-box:focus-within {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.lab-card,
+.challenge-card,
+.game-card,
+.tool-card {
+    transition:
+        transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+        border-color 0.35s ease,
+        box-shadow 0.35s ease,
+        background-color 0.35s ease;
+}
+
+
+.lab-card:hover,
+.challenge-card:hover,
+.game-card:hover,
+.tool-card:hover {
+    transform: translateY(-7px);
+}
+
+
+.lab-card *,
+.challenge-card *,
+.game-card *,
+.tool-card * {
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================================================
+   CARD ICONS
+========================================================= */
+
+.lab-card:hover .lab-icon,
+.challenge-card:hover .challenge-icon,
+.game-card:hover .game-icon,
+.tool-card:hover .tool-icon {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+
+/* =========================================================
+   CARD ARROWS
+========================================================= */
+
+.card-arrow {
+    transition:
+        transform 0.3s ease;
+}
+
+
+.lab-card:hover .card-arrow,
+.challenge-card:hover .card-arrow,
+.game-card:hover .card-arrow {
+    transform: translateX(6px);
+}
+
+
+/* =========================================================
+   TOOLS
+========================================================= */
+
+.tool-card input,
+.tool-card textarea,
+.tool-card select {
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease;
+}
+
+
+.tool-card input:focus,
+.tool-card textarea:focus,
+.tool-card select:focus {
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   PASSWORD BAR
+========================================================= */
+
+.password-bar > div {
+    transition:
+        width 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-features > div {
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.about-features > div:hover {
+    transform: translateY(-5px);
+}
+
+
+.about-features strong {
+    transition:
+        transform 0.3s ease;
+}
+
+
+.about-features > div:hover strong {
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   MODALS
+========================================================= */
+
+.modal {
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+
+.modal.active {
+    animation: fadeIn 0.3s ease both;
+}
+
+
+.modal.active .modal-box {
+    animation: modalIn 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+
+.modal-close {
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+.modal-close:hover {
+    transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+.mobile-nav {
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s ease;
+}
+
+
+.mobile-nav.active {
+    animation: fadeDown 0.3s ease both;
+}
+
+
+.mobile-menu-button span {
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+
+.mobile-menu-button.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+
+.mobile-menu-button.active span:nth-child(2) {
+    opacity: 0;
+}
+
+
+.mobile-menu-button.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* =========================================================
+   TOASTS
+========================================================= */
+
+.toast {
+    animation: toastIn 0.35s ease both;
+}
+
+
+.toast.removing {
+    animation: toastOut 0.3s ease both;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.loading {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+
+.spinner {
+    animation: spin 0.8s linear infinite;
+}
+
+
+/* =========================================================
+   BLINKING CURSOR
+========================================================= */
+
+.cursor-blink {
+    animation: blink 1s step-end infinite;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+}
